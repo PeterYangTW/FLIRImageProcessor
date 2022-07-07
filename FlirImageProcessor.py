@@ -518,9 +518,10 @@ class FLIRImage:
 ##############################################################################################################
 # Main Application
 ##############################################################################################################
-MyFlirImage = FLIRImage("FLIR0356.jpg")
-MyFlirImage.CreateFigure()
-MyFlirImage.PlotImages()
-MyFlirImage.AddWidgets()
-MyFlirImage.ShowFigure()
+if __name__ == '__main__':
+    MyFlirImage = FLIRImage("FLIR0356.jpg")
+    MyFlirImage.CreateFigure()
+    MyFlirImage.PlotImages()
+    MyFlirImage.AddWidgets()
+    MyFlirImage.ShowFigure()
 
